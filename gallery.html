@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Alan Farro Photo Gallery</title>
+<meta name="" content="">
+
+<link href="css/html5-reset.min.css" rel="stylesheet">
+<link href="css/themes/clean/nanogallery_clean.css" rel="stylesheet" type="text/css">                                                        
+<link href="css/themes/light/nanogallery_light.css" rel="stylesheet" type="text/css">
+<link href="css/responsivestyle.css" rel="stylesheet">
+<link rel="stylesheet" href="css/slicknav-style.css">
+<link rel="stylesheet" href="css/slicknav.css">
+
+</head>
+
+<body>
+<header>
+	<div class="row">
+		<div class="small-12 medium-12 large-12 columns">
+			<h2><a href="index.html"><span class="web-font">Alan Farro<span></a></h2>			
+		</div>
+	</div>
+</header>
+
+<nav>
+	<div class="row">
+		<div class="fixed small-12 large-12 columns section-bg-color2">			
+			<ul id="menu">
+				<li><a href="index.html" class="current">Home</a></li>
+				<li><a href="index.html">Commentary</a></li>
+				<li><a href="index.html">Places</a></li>
+				<li><a href="gallery.html">Photography</a></li>
+				<li><a href="index.html">Reads</a></li>
+				<li><a href="index.html">Science & Tech</a></li>
+				<li><a href="index.html">Business & Finance</a></li>
+				<li><a href="index.html">Cartoons</a></li>
+				<li><a href="index.html">Videos</a></li>
+				<li><a href="index.html">About</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+<div class="row" id="gallery">
+	<div class="small-12 medium-12 large-12 columns">
+		<div>
+			<div id="Gallery"></div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="small-12 medium-12 large-12 columns">
+		<footer>
+			<div class="row">
+				<div class="small-12 medium-12 large-12 columns">
+					<ul>
+						<li>&copy; 2015 Alan Farro. All rights reserved.</li>
+						
+					</ul>			
+				</div>
+			</div>
+		</footer>
+	</div>
+</div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.nanogallery.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.9/jquery.transit.min.js"></script>  
+<script src = "http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+<script type= "text/javascript" src="js/scroll-script.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+
+<script>
+		$(document).ready(function () {
+   
+		jQuery("#Gallery").nanoGallery({
+        userID:'69589893@N03',kind:'flickr',thumbnailWidth:'auto',thumbnailHeight:260,  //110,
+        viewerDisplayLogo:false,
+        locationHash:false,
+				thumbnailHoverEffect:[{'name':'labelSlideUp','duration':300},{'name':'imageScaleIn80', 'duration':500}],
+				thumbnailLabel:{display:true,position:'overImageOnBottom',descriptionMaxLength:50},
+        thumbnailLazyLoad:true,
+        theme:'clean',
+        colorScheme:'light',
+        locationHash: false,
+        level1: { thumbnailWidth: 250, thumbnailHeight: 250 }
+			});
+	});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#menu').slicknav({
+	label: '',
+	duration: 300,
+	prependTo:'.fixed'
+	});
+});
+</script>
+
+</body>
+</html>
